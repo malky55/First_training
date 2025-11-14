@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-scroll">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Tailwind Style -->
-    <link rel="stylesheet" href="src/output.css">
     <!-- Master Style -->
     <link rel="stylesheet" href="style.css">
+    <!-- Tailwind Style -->
+    <link rel="stylesheet" href="src/output.css">
     <!-- FontAwesome Library  -->
     <link rel="stylesheet" href="/all.min.css">
     <title>Flatter</title>
 </head>
 
-<body>
+<body class="overflow-scroll">
     <!-- Start Header  -->
-    <div class="header container m-auto h-25 xl:max-md:h-20 flex ">
+    <div class="header container m-auto flex h-20">
         <div
-            class="content w-full mt-auto bg-[#0E121B] h-20 rounded-2xl flex items-center justify-between p-5 text-white">
+            class="content w-full mt-auto bg-[#0E121B] h-15 rounded-2xl flex items-center justify-between  p-2 md:p-5 text-white">
             <div class="left flex items-center">
                 <i class="fa-regular fa-lightbulb mr-2 text-3xl text-amber-300"></i>
                 <h2 class="text-3xl font-bold font-sans text-white">Flatter</h2>
             </div>
-            <ul class="flex">
+            <ul class="hidden">
                 <li class="mr-5"><a href="#">Home</a></li>
                 <li class="mr-5"><a href="#">About us</a></li>
                 <li class="mr-5"><a href="#">Partners</a></li>
@@ -31,83 +31,95 @@
                 <li class="mr-5"><a href="#">FAQ</a></li>
                 <li class="mr-5"><a href="#">EN</a></li>
             </ul>
-            <button class="border-2 border-white px-3 py-1 rounded-2xl cursor-pointer">Get Started</button>
+            <button class="border-2 border-white px-3 py-1 rounded-2xl cursor-pointer ">Get Started</button>
         </div>
     </div>
     <!-- End Header  -->
     <!-- Start Landing -->
-    <div class="landing container m-auto pt-10 pb-10 flex justify-between flex-wrap md:text-center">
-        <div class=" text mt-5 max-xl:m-auto">
-            <div class="rows">
+    <div class="landing container m-auto my-10 flex justify-between max-md:flex-wrap">
+        <div class="text max-md:m-auto">
+            <div class="rows w-full mx-auto ">
                 <div class="row-one flex mb-5">
-                    <span class="mt-auto mr-10">01</span>
-                    <h4 class="text-7xl">Hello</h4>
+                    <span class="mt-auto mr-4 md:mr-10">01</span>
+                    <h4 class="text-2xl md:text-7xl">Hello</h4>
                 </div>
                 <div class="row-one flex mb-5">
-                    <span class="mt-auto mr-10">02</span>
+                    <span class="mt-auto mr-4 md:mr-10">02</span>
                     <div class="content flex items-center">
-                        <h4 class="text-7xl">Future</h4>
-                        <span class="w-34 h-17 mx-5 p-2 bg-[#0E121B] rounded-full flex items-center justify-between">
+                        <h4 class="text-2xl md:text-7xl">Future</h4>
+                        <span class="md:w-34 h-17 mx-5 p-2 bg-[#0E121B] rounded-full flex items-center justify-between">
                             <img class="rounded-full w-14 h-14" src="/images/avatar-02.png" alt="">
                             <img class="rounded-full w-14 h-14" src="/images/avatar-01.png" alt="">
                         </span>
-                        <h4 class="text-7xl">Home</h4>
+                        <h4 class="text-2xl md:text-7xl">Home</h4>
                     </div>
                 </div>
                 <div class="row-one flex mb-5">
-                    <span class="mt-auto mr-10">03</span>
-                    <h4 class="text-7xl">Owners</h4>
+                    <span class="mt-auto mr-4 md:mr-10">03</span>
+                    <h4 class="text-2xl md:text-7xl">Owners</h4>
                 </div>
-                <p class="w-[500px] ml-[60px] mt-10">Searching for your new home? Looking for a mortgage? No matter
+                <p class="w-75 text-center md:ml-15 md:w-110 max-md:m-auto  md:text-left mt-10">Searching for your new
+                    home?
+                    Looking for a
+                    mortgage? No
+                    matter
                     where
-                    you’re at in the home
-                    buying
-                    journey, you’ve come to the right place.
+                    you’re at in the home buying journey, you’ve come to the right place.
                 </p>
             </div>
-            <button class="mt-10 ml-[60px] block border-2 border-black px-8 py-1 rounded-2xl cursor-pointer">Get
+            <button
+                class="md:mt-10 md:ml-[60px] m-auto block border-2 border-black px-8 py-1 rounded-2xl cursor-pointer">Get
                 Started</button>
         </div>
 
-        <div class="info max-xl:my-10 max-xl:m-auto">
-            <div class="w-xl m-auto h-full bg-[#0E121B] rounded-3xl overflow-hidden p-5">
+        <div class="info mb-20 max-md:mt-10 max-lg:m-auto max-md:w-11/12">
+            <div class="w-full h-full m-auto  bg-[#0E121B] rounded-3xl overflow-hidden p-5">
                 <img src="/images/Frame-2.png" class="rounded-3xl" alt="">
-                <p class="text-zinc-200 text-2xl ">Every home buying journey is unique.</p>
+                <p class="text-zinc-200 text-2xl my-5 ">Every home buying journey is unique.</p>
             </div>
             <span
-                class="text-2xl flex justify-center items-center w-20 h-20 rounded-full p-5 bg-amber-300 m-auto -translate-y-1/2 outline-20 outline-white">
+                class="text-2xl flex justify-center items-center w-15 h-15 max-md:w-8 max-md:h-8 rounded-full p-5 bg-amber-300 m-auto -translate-y-1/2 max-md:outline-10 outline-15 outline-white">
                 <i class="fa-solid fa-arrow-right rotate-45 text-1xl "></i>
             </span>
         </div>
+
     </div>
-    <div class="section-one container m-auto flex items-center justify-between">
-        <div class="flex items-center bg-[#0E121B] flex-wrap rounded-3xl p-5">
-            <div class="flex items-center w-xl">
-                <img src="/images/Frame.png" class="rounded-2xl">
-                <div class="ml-5">
+
+    <div
+        class="section-one container m-auto flex items-center justify-between max-lg:justify-center xl:space-x-20 max-lg:flex-wrap">
+        <div
+            class="flex items-center p-5 bg-[#0E121B] rounded-3xl w-full max-md:w-11/12 max-lg:m-auto max-md:flex-wrap max-md:justify-center">
+            <div class="flex items-center w-full max-md:flex-wrap max-md:justify-center max-md:mb-2 ">
+                <img src="/images/Frame.png" class="rounded-2xl max-md:mb-2">
+                <div class="mx-5 flex-1">
                     <h2 class="text-white mb-2.5">Location</h2>
-                    <input type="text" class="border-b-2 border-white w-70 max-md:w-40 text-white p-2 focus:outline-0"
+                    <input type="text" class="border-b border-white w-full text-white p-2 focus:outline-0"
                         placeholder="Emirate, Neighborhood or Bulding">
                 </div>
             </div>
             <span
-                class="text-2xl flex justify-center items-center w-20 h-20 rounded-full p-5 text-white border-white border-2 cursor-pointer mr-5  max-md:mr-0">
-                <i class="fa-solid fa-arrow-right rotate-45 text-1xl "></i>
+                class="flex justify-center items-center w-15 h-15 p-8 rounded-full text-white border-white border cursor-pointer ">
+                <i class="fa-solid fa-arrow-right rotate-45 text-2xl "></i>
             </span>
         </div>
+
         <div>
-            <h2 class="text-right text-8xl w-[500px]">Start the search now.</h2>
+            <h2 class="text-right ml-auto lg:text-8xl max-lg:text-6xl max-lg:text-center max-lg:mx-auto w-full ">Start
+                the
+                search now.
+            </h2>
         </div>
+
     </div>
     <!-- End Landing -->
     <!-- Start Section Two  -->
     <div class="section-two container m-auto my-20">
-        <div class="info flex">
-            <i class="fa-solid fa-fire-flame-curved mr-10  mt-2"></i>
-            <div>
+        <div class="info flex max-md:w-11/12 max-md:justify-center">
+            <i class="fa-solid fa-fire-flame-curved mr-10 max-md:mr-5  mt-2"></i>
+            <div class="w-full">
                 <h4 class="text-2xl mb-10">Lorem ipsum</h4>
-                <div class="flex justify-between items-center gap-40">
-                    <h4 class="content text-6xl">
+                <div class="flex justify-between items-center max-md:flex-wrap w-full">
+                    <h4 class="content text-6xl max-md:text-2xl ">
                         Every home buying journey is unique
                     </h4>
                     <p class="info w-3xl">
@@ -118,11 +130,14 @@
                 </div>
             </div>
         </div>
+
         <div class="box bg-[#0E121B] mt-20 p-10 flex justify-between items-center rounded-3xl  overflow-hidden">
+
             <span
                 class="flex justify-center items-center w-15 h-15  rounded-full p-5 text-white outline-2 outline-white cursor-pointer mr-10">
                 <i class="fa-solid fa-arrow-right rotate-180 text-xl "></i>
             </span>
+
             <div class="text text-white flex items-center gap-10 ">
                 <div class="card w-2/5">
                     <h4 class="text-5xl mb-4">Find and finance your home with us with online</h4>
@@ -136,9 +151,10 @@
                     <h4 class="text-5xl mb-4">Find and finance your home with us with online</h4>
                     <a href="#" class="underline">Start with your mortgage</a>
                 </div>
-
             </div>
+
         </div>
+
     </div>
     <!-- End Section Two  -->
     <!-- Start Section Three  -->
